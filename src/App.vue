@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="mb-2">
+      <ul id="menu">
+        <li><a href="#">Acerca</a></li>
+        <li><a href="#">Experiencia</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Educación</a></li>
+      </ul>
+      <!--fim menu-->
+    </div>
+
+    <About class="margin-about" />
+    <Experience />
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+/* import HelloWorld from './components/HelloWorld.vue' */
+
+import About from "./components/About.vue";
+import Experience from "./components/Experience.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    About,
+    Experience,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "./assets/styles/styles.scss";
+.margin-about{
+  margin-bottom: 500px !important;
 }
 </style>
