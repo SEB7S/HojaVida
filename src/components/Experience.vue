@@ -3,7 +3,7 @@
     <div id="timeline">
       <h2 class="w-100 text-center">Experiencia</h2>
       <div class="demo-card-wrapper">
-        <div class="demo-card demo-card--step1">
+        <div class="demo-card demo-card--step1" v-scroll-reveal.reset="{ delay: 250 }">
           <div class="head">
             <div class="number-box">
               <span>01</span>
@@ -30,7 +30,7 @@
           </div>
         </div>
 
-        <div class="demo-card demo-card--step2">
+        <div class="demo-card demo-card--step2" v-scroll-reveal.reset="{ delay: 250 }">
           <div class="head">
             <div class="number-box">
               <span>02</span>
@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="demo-card demo-card--step3">
+        <div class="demo-card demo-card--step3" v-scroll-reveal.reset="{ delay: 250 }"> 
           <div class="head">
             <div class="number-box">
               <span>03</span>
@@ -70,7 +70,7 @@
           </div>
         </div>
 
-        <div class="demo-card demo-card--step4">
+        <div class="demo-card demo-card--step4" v-scroll-reveal.reset="{ delay: 250 }">
           <div class="head">
             <div class="number-box">
               <span>04</span>
@@ -86,7 +86,7 @@
           </div>
         </div>
 
-        <div class="demo-card demo-card--step5">
+        <div class="demo-card demo-card--step5" v-scroll-reveal.reset="{ delay: 250 }">
           <div class="head">
             <div class="number-box">
               <span>05</span>

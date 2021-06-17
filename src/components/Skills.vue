@@ -3,7 +3,7 @@
     <div class="charts">
       <h2 class="w-100 m-5 text-center">Competencias</h2>
       <div class="chart chart--dev">
-        <div class="card p-5 my-3">
+        <div class="card p-5 my-3" v-scroll-reveal.reset="{ delay: 250 }">
           <h5 class="m-3">Profesionales:</h5>
           <ul class="chart--horiz">
             <li class="chart__bar" style="width: 90%">
@@ -50,7 +50,7 @@
             </li>
           </ul>
         </div>
-        <div class="card p-5 my-3">
+        <div class="card p-5 my-3" v-scroll-reveal.reset="{ delay: 250 }">
           <h5 class="m-3">Personales:</h5>
           <ul class="chart--horiz">
             <li class="chart__bar" style="width: 90%">

@@ -1,24 +1,34 @@
 <template>
-  <div id="app">
+  <div id="app" style="overflow-x: hidden">
     <div class="mb-2">
       <ul id="menu">
-        <li><a href="#About">Acerca</a></li>
-        <li><a href="#Experience">Experiencia</a></li>
-        <li><a href="#Skills">Competencias</a></li>
-        <li><a href="#Portafolio">Portafolio</a></li>
-        <li><a href="#Educacion">Educación</a></li>
+        <a href=""></a>
+        <li><a href="#About" v-smooth-scroll>Acerca</a></li>
+        <li><a href="#Experience" v-smooth-scroll>Experiencia</a></li>
+        <li><a href="#Skills" v-smooth-scroll>Competencias</a></li>
+        <li><a href="#Portafolio" v-smooth-scroll>Portafolio</a></li>
       </ul>
       <!--fim menu-->
     </div>
+    <div v-scroll-reveal.reset="{ delay: 250 }" class="margin-about headline">
+      <About id="About" />
+    </div>
+    <div>
+      <Experience
+        id="Experience"
+        class="headline"
+      />
+    </div>
+    <div class="margin-skills">
+      <Skills id="Skills"  />
+    </div>
+    <div class="margin-portafolio">
+      <Portafolio id="Portafolio" />
+    </div>
 
-    <About id="About" class="margin-about" />
-    <Experience id="Experience" />
-    <Skills id="Skills" class="margin-skills"/>
-    <Portafolio id="Portafolio" class="margin-portafolio" />
-<!--     <Educacion id="Educacion" class="margin-educacion" /> -->
+    <!--     <Educacion id="Educacion" class="margin-educacion" /> -->
 
-    
-
+    <footer class="footer">© 2021 Copyright: sebastian Vera</footer>
   </div>
 </template>
 
@@ -38,17 +48,28 @@ export default {
     Experience,
     Skills,
     Portafolio,
-/*     Educacion */
+    /*     Educacion */
   },
+  methods: {},
 };
 </script>
 
 <style>
 @import "./assets/styles/styles.scss";
-.margin-about{
+.margin-about {
   margin-bottom: 500px !important;
 }
-.margin-skills{
+.margin-skills {
   margin-bottom: 60%;
+}
+.margin-portafolio {
+  margin-bottom: 10%;
+}
+.footer {
+  background-color: #040c26;
+  width: 100%;
+  height: 100%;
+  text-align: center !important;
+  color: white;
 }
 </style>
